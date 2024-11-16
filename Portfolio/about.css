@@ -27,9 +27,9 @@ h1 {
 }
 
 
-
 .about-section {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
     justify-content: center;
     padding: 40px 20px;
@@ -40,6 +40,35 @@ h1 {
     border-radius: 8px;
     border: 1px solid rgb(149, 9, 161);
 }
+.sosial{
+    margin-top: 10px;
+}
+ .sosial span{
+    color: #5c1b56;
+    font-size: 25px;
+    font-weight: 800;
+    margin-right: 20px;
+ }
+
+ .sosial i{
+    margin-left: 10px;
+    font-size: 30px;
+    color: #5c1b56;
+    cursor: pointer;
+ }
+ 
+ .sosial .fa-instagram:hover {
+    color: #F41F7E;
+}
+
+.sosial .fa-facebook:hover {
+    color: rgba(9, 9, 253, 0.822);
+}
+
+.sosial .fa-linkedin:hover {
+    color: rgb(9, 9, 158);
+}
+
 
 .about-content {
     flex: 1;
@@ -49,7 +78,7 @@ h1 {
 
 .about-content h2 {
     font-size: 40px;
-    color: #333;
+    color: #5c1b56;
     margin-bottom: 10px;
 }
 
@@ -71,5 +100,5 @@ h1 {
     width: 250px;
     border-radius: 50%;
     border: 1px solid rgb(149, 9, 161);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }

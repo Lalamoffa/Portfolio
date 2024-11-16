@@ -105,21 +105,23 @@ body {
 /*--------------------------- END NAVBAR ----------------------------*/
 
 /*!------------------------ START CONTAINER ---------------------------*/
-.container .row img {
-    width: 100%;
-    margin-top: 0;
+.container .row1 img {
+    width: 80%;
+    margin-top: 20px;
+    max-height: 500px;
+    margin-left: 125px;
 }
 
-.container .row {
+.container .row1 {
     position: relative;
 }
 
-.container .section  {
+.container .section {
     position: absolute;
     z-index: 99999;
-    top: 600px;
-    left: 40%;
-    color: #745439;
+    top: 250px;
+    left: 30%;
+    color: #fff;
     font-size: 50px;
 }
 
@@ -145,7 +147,6 @@ body {
 .footer .left {
     margin-left: 100px;
     width: 400px;
-    margin-top: 20px;
 
 }
 
@@ -192,6 +193,43 @@ body {
 
 }
 
+.footer-about {
+    width: 500px;
+}
+
+.footer-about p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    width: 88%;
+}
+
+.sosial-footer {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.sosial-footer i {
+    margin-left: 15px;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #fff;
+    color: #3B1438;
+}
+.sosial-footer .fa-instagram:hover {
+    color: #F41F7E;
+}
+
+.sosial-footer .fa-facebook:hover {
+    color: rgba(9, 9, 253, 0.822);
+}
+
+.sosial-footer .fa-linkedin:hover {
+    color: rgb(9, 9, 158);
+}
+
 .footer_down {
     background-color: #3B1438;
     text-align: center;
@@ -206,9 +244,16 @@ body {
     margin-left: 100px;
 
 }
+.centerFooter a{
+    text-decoration: none;
+    color: #fff;
+}
+
 .centerFooter p {
     font-size: 23px;
+    
 }
+
 .centerFooter p:hover {
     color: rgb(12, 160, 197);
     transform: translateX(10px);
