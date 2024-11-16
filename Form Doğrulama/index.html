@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Doğrulama</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f7f7f7;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            padding: 15px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px
+        }
+
+        label {
+            margin-top: 15px;
+        }
+
+        input,
+        textarea {
+            padding: 10px;
+            font-size: 15px;
+            margin-top: 10px;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 7px;
+            font-size: 15px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        small{
+            margin-top: 4px;
+        }
+        .error {
+            color: red;
+            font-size: 0.85rem;
+        }
+
+
+        .error.visible {
+            visibility: visible;
+            /* Xəta olduqda görünəcək */
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Bizimlə Əlaqə</h2>
+    <form id="contactForm">
+        <label for="name">Ad:</label>
+        <input type="text" name="name" id="name">
+        <small class="error" id="nameError"></small>
+
+        <label for="surname">Soyad:</label>
+        <input type="text" name="surname" id="surname">
+        <small class="error" id="surnameError"></small>
+
+        <label for="email">E-poçt:</label>
+        <input type="email" name="email" id="email">
+        <small class="error" id="emailError"></small>
+
+        <label for="message">Mesaj:</label>
+        <textarea name="message" id="message"></textarea>
+        <small class="error" id="messageError"></small>
+
+        <button type="submit" id="submit">Göndər</button>
+    </form>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function (event) {
+            event.preventDefault(); // Formun göndərilməsini dayandırır
+            validateForm();
+        });
+
+        function validateForm() {
+            let isValid = true;
+
+            const name = document.getElementById('name').value.trim();
+            const surname = document.getElementById('surname').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const message = document.getElementById('message').value.trim();
+
+            
+            if (name === '') {
+                showError('nameError', 'Ad daxil edin');
+                isValid = false;
+            } else {
+                showError('nameError', '');
+            }
+
+            if (surname === '') {
+                showError('surnameError', ' Soyad daxil edin');
+                isValid = false;
+            } else {
+                showError('surnameError', '');
+            }
+
+        
+            if (email === '') {
+                showError('emailError', 'E-poçt daxil edin');
+                isValid = false;
+            } else if (!isValidEmail(email)) {
+                showError('emailError', 'E-poçt formatı düzgün deyil');
+                isValid = false;
+            } else {
+                showError('emailError', '');
+            }
+
+            
+            if (message === '') {
+                showError('messageError', 'Mesaj daxil edin');
+                isValid = false;
+            } else {
+                showError('messageError', '');
+            }
+
+            if (isValid) {
+                alert('Form uğurla göndərildi!');
+            }
+        }
+
+
+        function showError(elementId, message) {
+            const errorElement = document.getElementById(elementId);
+            errorElement.innerText = message;
+            errorElement.classList.add('visible'); // Xəta varsa görünür
+        }
+
+        function hideError(elementId) {
+            const errorElement = document.getElementById(elementId);
+            errorElement.classList.remove('visible'); // Xəta yoxdursa gizlənir
+        }
+
+        function isValidEmail(email) {
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailPattern.test(email);
+        }
+
+    </script>
+</body>
+
+</html>

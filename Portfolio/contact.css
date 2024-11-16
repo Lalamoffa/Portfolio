@@ -1,0 +1,123 @@
+.contact-container {
+    width: 90%;
+    padding: 20px;
+    text-align: center;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+.row{
+    margin-top: 30px;
+}
+h1 {
+    color: #5c1b56;
+    font-size: 45px;
+    margin-bottom: 10px;
+
+}
+
+.line {
+    height: 2px;
+    width: 200px;
+    background: rgb(149, 9, 161);
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+.info-boxes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.info-box {
+    background-color: rgb(245, 243, 243);
+    border: 1px solid rgb(149, 9, 161);
+    border-radius: 10px;
+    padding: 15px;
+    flex: 1 1 45%;
+    text-align: left;
+}
+
+.info-box h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: rgb(149, 9, 161);
+}
+
+.info-box p {
+    color: #333;
+    font-size: 18px;
+    margin-left: 15px;
+}
+
+.info-box p:hover {
+    cursor: pointer;
+    color: rgb(12, 160, 197);
+}
+
+.map-and-form {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 500px;
+    background-color: rgb(245, 243, 243);
+    border: 1px solid rgb(149, 9, 161);
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1;
+}
+textarea{
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(149, 9, 161);
+    border-radius: 5px;
+    background-color: rgb(245, 243, 243);
+    color: #333;
+    outline: none;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(149, 9, 161);
+    border-radius: 5px;
+    background-color: rgb(245, 243, 243);
+    color: #333;
+    outline: none;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(to right, #3B1438, rgb(149, 9, 161));
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background: linear-gradient(to right, #3B1438, rgb(149, 9, 161));
+}

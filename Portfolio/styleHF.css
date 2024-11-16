@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(images/bg.jpg);
+    background-size: cover;
+    /* Şəklin konteyneri tam doldurması üçün */
+    background-position: center;
+    background-attachment: fixed;
+    /* Parallax effekti üçün */
+    position: relative;
+}
+
+.navbar {
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    border-bottom: 1px solid rgb(149, 9, 161);
+    background-color: #ffffff;
+}
+
+.logo {
+    margin-left: 10px;
+    color: rgb(149, 9, 161);
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+.logo a img {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logo a:hover {
+    color: rgb(149, 9, 161);
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 50px;
+    list-style: none;
+
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: serif;
+
+}
+
+.navbar ul li a:hover {
+    color: rgb(149, 9, 161);
+    filter: brightness(1.5);
+}
+
+.center {
+    position: relative;
+    display: inline-block;
+}
+
+.center input[type='text1'] {
+    background-color: #fff;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    padding: 7px 10px;
+    width: 300px;
+    outline: none;
+    color: #222;
+}
+
+.center i {
+    position: absolute;
+    top: 47%;
+    left: 91%;
+    color: rgb(163, 162, 162);
+    transform: translateY(-50%);
+}
+
+.center i:hover {
+    color: rgb(129, 126, 126);
+    cursor: pointer;
+}
+
+
+
+/*--------------------------- END NAVBAR ----------------------------*/
+
+/*!------------------------ START CONTAINER ---------------------------*/
+.container .row img {
+    width: 100%;
+    margin-top: 0;
+}
+
+.container .row {
+    position: relative;
+}
+
+.container .section  {
+    position: absolute;
+    z-index: 99999;
+    top: 600px;
+    left: 40%;
+    color: #745439;
+    font-size: 50px;
+}
+
+
+
+
+
+
+/*!------------------------ END CONTAINER ---------------------------*/
+
+/*?--------------------------- START FOOTER --------------------------*/
+.footer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding: 30px 70px;
+    background-color: #3B1438;
+    color: #fff;
+    height: 200px;
+}
+
+.footer .left {
+    margin-left: 100px;
+    width: 400px;
+    margin-top: 20px;
+
+}
+
+.footer h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-weight: 600;
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+.footer ul {
+    margin-top: 20px;
+    font-size: 23px;
+
+}
+
+.footer ul li {
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    list-style: none;
+    font-size: 23px;
+}
+
+.footer ul li:hover {
+    transform: translateX(10px);
+}
+
+.footer ul li span {
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+.info p a:hover {
+    color: rgb(12, 160, 197);
+
+}
+
+.info p a {
+    text-decoration: none;
+    color: #fff;
+
+}
+
+.footer_down {
+    background-color: #3B1438;
+    text-align: center;
+    border-top: 1px dashed lightgray;
+    color: #fff;
+    font-size: 25px;
+    padding: 10px;
+}
+
+.centerFooter {
+    width: 400px;
+    margin-left: 100px;
+
+}
+.centerFooter p {
+    font-size: 23px;
+}
+.centerFooter p:hover {
+    color: rgb(12, 160, 197);
+    transform: translateX(10px);
+}
+
+/*?--------------------------- END FOOTER ----------------------------*/
+
+/*!--------------------------- Scrollbar ----------------------------*/
+/* Scrollbar genişliyini təyin edir */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+/* Scrollbar arxa fonu */
+::-webkit-scrollbar-track {
+    width: 14px;
+    background-color: #ececec;
+    /* Açıq rəngli fon */
+    border-radius: 10px;
+    /* Yumru künclər */
+}
+
+/* Scrollbarın sürüşmə hissəsi */
+::-webkit-scrollbar-thumb {
+    background-color: rgb(150, 23, 161);
+    /* Scroll barın rəngi */
+    border-radius: 10px;
+    /* Yumru künclər */
+    border: 2px solid #fffcfc;
+    /* Arxa fonla uyğun sərhəd */
+}
+
+/* Scrollbar sürüşmə hissəsinə hover ediləndə rəngi */
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(173, 34, 185);
+    /* Hover zamanı daha tünd rəng */
+}
