@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="blog.css">
     <link rel="stylesheet" href="about.css">
     <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
 
@@ -38,163 +39,170 @@
     <!--------------------------- END NAVBAR ---------------------------->
 
     <!------------------------ START CONTAINER --------------------------->
-
-
-    <div class="container">
-        <div class="row1">
-            <img src="images/bannerimg.jpg" alt="banner">
+    <div class="index-container">
+        <div class="page-about">
+            <h1>Lala Mammadova</h1>
+            <p>Salam! Mən Lalə Məmmədova, gözəl və funksional veb proqramlar yaratmaq həvəsi olan qabaqcıl tərtibatçıyam. HTML, CSS, JavaScript və React-də təcrübəm var. Məqsədim qüsursuz və istifadəçi dostu rəqəmsal təcrübələr yaratmaqdır.</p>
+            <button type="submit" id="btn-btn">CV Yüklə</button>
         </div>
-        <section class="section">
-            <h2>Portfel</h2>
-            <h5>Lala Mammadova</h5>
+        <div class="page-image">
+            <img src="images/img3.jpg" alt="img">
+        </div>
+    </div>
+
+
+
+
+    <!------------------------ BLOG --------------------------->
+    <div class="container-blog">
+        <div class="row1">
+            <p class="line"></p>
+            <h1>Blog</h1>
+            <p class="line"></p>
+        </div>
+        <div class="blog-posts">
+            <div class="blog">
+                <img src="images/img1.jpg" alt="blog">
+                <div class="descriptions">
+                    <h2>Blog post 1</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, officia! Lorem ipsum dolor sit
+                        amet.</p>
+                    <button>Ətraflı bax</button>
+                </div>
+            </div>
+            <div class="blog">
+                <img src="images/img1.jpg" alt="blog">
+                <div class="descriptions">
+                    <h2>Blog post 2</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, officia!</p>
+                    <button>Ətraflı bax</button>
+                </div>
+            </div>
+            <div class="blog">
+                <img src="images/img1.jpg" alt="blog">
+                <div class="descriptions">
+                    <h2>Blog post 3</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, officia!</p>
+                    <button>Ətraflı bax</button>
+                </div>
+            </div>
+            <div class="blog">
+                <img src="images/img1.jpg" alt="blog">
+                <div class="descriptions">
+                    <h2>Blog post 4</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, officia!</p>
+                    <button>Ətraflı bax</button>
+                </div>
+            </div>
+            <div class="blog">
+                <img src="images/img1.jpg" alt="blog">
+                <div class="descriptions">
+                    <h2>Blog post 5</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, officia!</p>
+                    <button>Ətraflı bax</button>
+                </div>
+            </div>
+            <div class="blog">
+                <img src="images/img1.jpg" alt="blog">
+                <div class="descriptions">
+                    <h2>Blog post 6</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, officia!</p>
+                    <button>Ətraflı bax</button>
+                </div>
+            </div>
+            <div class="blog">
+                <img src="images/img1.jpg" alt="blog">
+                <div class="descriptions">
+                    <h2>Blog post 7</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, officia!</p>
+                    <button>Ətraflı bax</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!------------------------ ABOUT --------------------------->
+    <div class="contact-container">
+        <div class="row">
+            <p class="line"></p>
+            <h1>Haqqımda</h1>
+            <p class="line"></p>
+        </div>
+        <section class="about-section">
+            <div class="about-content">
+                <h2>Haqqımda</h2>
+                <p>Salam! Mən Lalə Məmmədova, gözəl və funksional veb proqramlar yaratmaq həvəsi olan qabaqcıl
+                    tərtibatçıyam. HTML, CSS, JavaScript və React-də təcrübəm var. Məqsədim qüsursuz və istifadəçi dostu
+                    rəqəmsal təcrübələr yaratmaqdır.</p>
+            </div>
+            <div class="about-image">
+                <img src="images/profil.png" alt="Lale Memmedova'nin Profili">
+            </div>
+            <div class="sosial">
+                <span>Sosial Media</span>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
         </section>
 
-        <!------------------------ BLOG --------------------------->
-        <div class="container-blog">
-            <div class="row">
-                <p class="line"></p>
-                <h1>Blog</h1>
-                <p class="line"></p>
-            </div>
-            <div class="card-container">
 
-                <!-- Kart 1 -->
-                <div class="card">
-                    <img src="https://via.placeholder.com/300x200" alt="Blog Şəkli">
-                    <div class="card-content">
-                        <h3>HTML</h3>
-                        <p>Bu, birinci blog kartının qısa təsviridir. Blog haqqında əsas məlumatları burada veririk.</p>
-                        <a href="#" class="read-more">Daha çox oxu</a>
-                    </div>
-                </div>
-
-                <!-- Kart 2 -->
-                <div class="card">
-                    <img src="https://via.placeholder.com/300x200" alt="Blog Şəkli">
-                    <div class="card-content">
-                        <h3>CSS</h3>
-                        <p>İkinci blog kartının təsviri. Bu yazıda faydalı məlumatlar təqdim olunur.</p>
-                        <a href="#" class="read-more">Daha çox oxu</a>
-                    </div>
-                </div>
-
-                <!-- Kart 3 -->
-                <div class="card">
-                    <img src="https://via.placeholder.com/300x200" alt="Blog Şəkli">
-                    <div class="card-content">
-                        <h3>Java Script</h3>
-                        <p>Üçüncü blog kartının təsviri. Burada maraqlı məqalələr tapa bilərsiniz.</p>
-                        <a href="#" class="read-more">Daha çox oxu</a>
-                    </div>
-                </div>
-                <!-- Kart 1 -->
-                <div class="card">
-                    <img src="https://via.placeholder.com/300x200" alt="Blog Şəkli">
-                    <div class="card-content">
-                        <h3>HTML</h3>
-                        <p>Bu, birinci blog kartının qısa təsviridir. Blog haqqında əsas məlumatları burada veririk.</p>
-                        <a href="#" class="read-more">Daha çox oxu</a>
-                    </div>
-                </div>
-
-                <!-- Kart 2 -->
-                <div class="card">
-                    <img src="https://via.placeholder.com/300x200" alt="Blog Şəkli">
-                    <div class="card-content">
-                        <h3>CSS</h3>
-                        <p>İkinci blog kartının təsviri. Bu yazıda faydalı məlumatlar təqdim olunur.</p>
-                        <a href="#" class="read-more">Daha çox oxu</a>
-                    </div>
-                </div>
-
-                <!-- Kart 3 -->
-                <div class="card">
-                    <img src="https://via.placeholder.com/300x200" alt="Blog Şəkli">
-                    <div class="card-content">
-                        <h3>Java Script</h3>
-                        <p>Üçüncü blog kartının təsviri. Burada maraqlı məqalələr tapa bilərsiniz.</p>
-                        <a href="#" class="read-more">Daha çox oxu</a>
-                    </div>
-                </div>
-            </div>
+    </div>
 
 
-        </div>
-        <!------------------------ ABOUT --------------------------->
 
-        <div class="contact-container">
-            <div class="row">
-                <p class="line"></p>
-                <h1>Haqqımda</h1>
-                <p class="line"></p>
-            </div>
-            <section class="about-section">
-                <div class="about-content">
-                    <h2>Haqqımda</h2>
-                    <p>Salam! Mən Lalə Məmmədova, gözəl və funksional veb proqramlar yaratmaq həvəsi olan qabaqcıl
-                        tərtibatçıyam. HTML, CSS, JavaScript və React-də təcrübəm var. Məqsədim qüsursuz və istifadəçi
-                        dostu rəqəmsal təcrübələr yaratmaqdır.</p>
-                </div>
-                <div class="about-image">
-                    <img src="images/profil.png" alt="Lale Memmedova'nin Profili">
-                </div>
-                <div class="sosial">
-                    <span>Sosial Media</span>
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-facebook"></i>
-                    <i class="fa-brands fa-linkedin"></i>
-                </div>
-            </section>
+    <!------------------------ CONTACT --------------------------->
+    <div class="contact-container">
+        <div class="row1">
+            <p class="line"></p>
+            <h1>Əlaqə</h1>
+            <p class="line"></p>
         </div>
 
-        <!------------------------ CONTACT --------------------------->
-
-        <div class="contact-container">
-            <div class="row">
-                <p class="line"></p>
-                <h1>Əlaqə</h1>
-                <p class="line"></p>
-
+        <div class="info-boxes">
+            <div class="info-box">
+                <h3><i class="fa-solid fa-location-dot"></i> Məkan</h3>
+                <p>Bakı, Azərbaycan</p>
             </div>
-            <div class="info-boxes">
-                <div class="info-box">
-                    <h3><i class="fa-solid fa-location-dot" style="color: red;"></i> Məkan</h3>
-                    <p>Bakı, Azərbaycan</p>
-                </div>
-                <div class="info-box">
-                    <h3><i class="fa-solid fa-phone" style="color: red;"></i> Əlaqə Nömrəsi</h3>
-                    <p>+994(51) 794-27-03</p>
-                </div>
-                <div class="info-box">
-                    <h3><i class="fa-regular fa-envelope" style="color: red;"></i> Email</h3>
-                    <p>lalememmedova1133@gmail.com</p>
-                </div>
-
+            <div class="info-box">
+                <h3><i class="fa-solid fa-phone"></i> Əlaqə Nömrəsi</h3>
+                <p>+994(51) 794-27-03</p>
+            </div>
+            <div class="info-box">
+                <h3><i class="fa-regular fa-envelope"></i> Email</h3>
+                <p>lalememmedova1133@gmail.com</p>
             </div>
 
-            <div class="map-and-form">
-                <div class="map-container" style="flex: 1; min-width: 300px;">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3648.9579149186237!2d90.36384041543886!3d23.81702808455681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c12f3fd22c59%3A0xdb7075c746d9d23b!2sPublic%20Works%20Janme%20Mosjid%2C%20Dhaka%201211!5e0!3m2!1sen!2sbd!4v1619636014143!5m2!1sen!2sbd"
-                        allowfullscreen="" loading="lazy"></iframe>
-                </div>
+        </div>
 
-                <div class="form-container" style="flex: 1; min-width:300px; max-width: 500px;">
-                    <form>
-                        <div style="display: flex; gap: 10px;">
-                            <input type="text" placeholder="Ad..." required style="flex: 1;">
-                            <input type="text" placeholder="Soyad..." required style="flex: 1;">
-                        </div>
-                        <div style="display: flex; gap: 10px;">
-                            <input type="text" placeholder="Əlaqə Nömrəsi..." required style="flex: 1;">
-                            <input type="email" placeholder="Email..." required style="flex: 1;">
-                        </div>
-                        <textarea rows="4" class="mesaj" placeholder="Mesaj..." required></textarea>
+        <div class="container">
 
-                        <button type="submit" class="submit-btn">Göndər</button>
-                    </form>
-                </div>
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387190.27991417675!2d-74.25987568783214!3d40.69767006497815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24658c59e0145%3A0xb66c8e75e6f9ab5d!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2str!4v1615372338657!5m2!1sen!2str"
+                    allowfullscreen="" loading="lazy"></iframe>
             </div>
+            <div class="form-container">
+                <form>
+                    <div class="form-group">
+                        <input type="text" name="ad" placeholder="Ad" required>
+                        <input type="text" name="soyad" placeholder="Soyad" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" name="tel" placeholder="Telefon" required>
+                        <input type="email" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="mesaj" placeholder="Mesajınız" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Göndər</button>
+                </form>
+            </div>
+
+
         </div>
 
     </div>
@@ -206,51 +214,47 @@
     <footer>
         <div class="footer">
             <div class="footer-about">
-                <h2>Lala Mammadova</h2>
+                <div class="logo">
+                    <a href="index.html"><img src="images/mdvlogo.png" alt="logo"></a>
+                </div>
                 <p>Salam! Mən Lalə Məmmədova, gözəl və funksional veb proqramlar yaratmaq həvəsi olan qabaqcıl
                     tərtibatçıyam.</p>
                 <div class="sosial-footer">
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-facebook"></i>
-                    <i class="fa-brands fa-linkedin"></i>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
             </div>
 
-            <div class="left">
+            <div class="footer-center">
                 <h2>Əlaqə</h2>
+
                 <ul>
-                    <div class="logo">
-                        <a href="index.html"><img src="images/mdvlogo.png" alt="logo"></a>
-                    </div>
                     <li>
-                        <span><i class="fas fa-envelope"></i></span>
-                        <div class="info">
-                            <p>
-                                <a href="#">lalememmedova1133@gmail.com</a>
-                            </p>
-                        </div>
+                        <i class="fas fa-envelope"></i>
+                        <a href="#">lalememmedova1133@gmail.com</a>
                     </li>
                     <li>
-                        <span><i class="fas fa-phone"></i></span>
-                        <div class="info">
-                            <p class="num">+994(51) 794-27-03</p>
-                        </div>
+                        <i class="fas fa-phone"></i>
+                        <a href="#" class="num">+994(51) 794-27-03</a>
                     </li>
                 </ul>
             </div>
 
-            <div class="centerFooter">
+            <div class="footer-right">
                 <h2>Keçidlər</h2>
                 <ul>
                     <li>
-                        <a href="about.html"><p class="text">Haqqımda</p></a>
+                        <a href="about.html">
+                            <p class="text">Haqqımda</p>
+                        </a>
                     </li>
                     <li>
-                        <a href="blog.html"><p class="text">Blog</p></a>
+                        <a href="blog.html">
+                            <p class="text">Blog</p>
+                        </a>
                     </li>
-                    <li>
-                        <a href="contact.html"><p class="text">Əlaqə</p></a>
-                    </li>
+
                 </ul>
             </div>
         </div>

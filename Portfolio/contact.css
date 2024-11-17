@@ -5,13 +5,12 @@
     margin-left: 50px;
     margin-bottom: 50px;
 }
-.row{
-    margin-top: 20px;
-}
+
 h1 {
     color: #5c1b56;
     font-size: 45px;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .line {
@@ -47,6 +46,9 @@ h1 {
     color: rgb(149, 9, 161);
 }
 
+.info-box i{
+    color: red;
+}
 .info-box p {
     color: #333;
     font-size: 18px;
@@ -58,58 +60,56 @@ h1 {
     color: rgb(12, 160, 197);
 }
 
-.map-and-form {
+.container {
     display: flex;
-    justify-content: space-between;
-    gap: 15px;
+    gap: 20px;
+    width: 97%;
+    background-color: rgb(245, 243, 243);
+    border: 1px solid rgb(149, 9, 161);
+    padding: 20px;
+    border-radius: 8px;
     margin-top: 50px;
-    flex-wrap: wrap;
 }
 
-.map-container iframe {
+.form-container,
+.map-container {
+    flex: 1;
+}
+
+.form-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    background-color: rgb(245, 243, 243);
+    border: 1px solid rgb(149, 9, 161);
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+iframe {
     width: 100%;
     height: 100%;
     border: none;
-    border-radius: 10px;
-}
-
-.form-container {
-    width: 100%;
-    max-width: 500px;
-    background-color: rgb(245, 243, 243);
-    border: 1px solid rgb(149, 9, 161);
-    border-radius: 10px;
-    padding: 20px;
-    flex: 1;
-}
-textarea{
-    width: 90%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid rgb(149, 9, 161);
-    border-radius: 5px;
-    background-color: rgb(245, 243, 243);
-    color: #333;
-    outline: none;
-}
-
-input[type="text"],
-input[type="email"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid rgb(149, 9, 161);
-    border-radius: 5px;
-    background-color: rgb(245, 243, 243);
-    color: #333;
-    outline: none;
+    border-radius: 8px;
 }
 
 .submit-btn {
     width: 100%;
     padding: 12px;
     background: linear-gradient(to right, #3B1438, rgb(149, 9, 161));
-    border: none;
+    border: 1px solid rgb(149, 9, 161);
     color: #fff;
     border-radius: 5px;
     cursor: pointer;
@@ -118,5 +118,5 @@ input[type="email"] {
 }
 
 .submit-btn:hover {
-    background: linear-gradient(to right, #3B1438, rgb(149, 9, 161));
+    background: linear-gradient(to right, rgb(149, 9, 161), #3B1438);
 }

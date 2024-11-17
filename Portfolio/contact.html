@@ -38,7 +38,7 @@
 
 
     <div class="contact-container">
-        <div class="row">
+        <div class="row1">
             <p class="line"></p>
             <h1>Əlaqə</h1>
             <p class="line"></p>
@@ -46,43 +46,47 @@
         </div>
         <div class="info-boxes">
             <div class="info-box">
-                <h3><i class="fa-solid fa-location-dot" style="color: red;"></i> Məkan</h3>
+                <h3><i class="fa-solid fa-location-dot"></i> Məkan</h3>
                 <p>Bakı, Azərbaycan</p>
             </div>
             <div class="info-box">
-                <h3><i class="fa-solid fa-phone" style="color: red;"></i> Əlaqə Nömrəsi</h3>
+                <h3><i class="fa-solid fa-phone"></i> Əlaqə Nömrəsi</h3>
                 <p>+994(51) 794-27-03</p>
             </div>
             <div class="info-box">
-                <h3><i class="fa-regular fa-envelope" style="color: red;"></i> Email</h3>
+                <h3><i class="fa-regular fa-envelope"></i> Email</h3>
                 <p>lalememmedova1133@gmail.com</p>
             </div>
 
         </div>
 
-        <div class="map-and-form">
-            <div class="map-container" style="flex: 1; min-width: 300px;">
+        <div class="container">
+
+            <div class="map-container">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3648.9579149186237!2d90.36384041543886!3d23.81702808455681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c12f3fd22c59%3A0xdb7075c746d9d23b!2sPublic%20Works%20Janme%20Mosjid%2C%20Dhaka%201211!5e0!3m2!1sen!2sbd!4v1619636014143!5m2!1sen!2sbd"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387190.27991417675!2d-74.25987568783214!3d40.69767006497815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24658c59e0145%3A0xb66c8e75e6f9ab5d!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2str!4v1615372338657!5m2!1sen!2str"
                     allowfullscreen="" loading="lazy"></iframe>
             </div>
-
-            <div class="form-container" style="flex: 1; min-width:300px; max-width: 500px;">
+            <div class="form-container">
                 <form>
-                    <div style="display: flex; gap: 10px;">
-                        <input type="text" placeholder="Ad..." required style="flex: 1;">
-                        <input type="text" placeholder="Soyad..." required style="flex: 1;">
+                    <div class="form-group">
+                        <input type="text" name="ad" placeholder="Ad" required>
+                        <input type="text" name="soyad" placeholder="Soyad" required>
                     </div>
-                    <div style="display: flex; gap: 10px;">
-                        <input type="text" placeholder="Əlaqə Nömrəsi..." required style="flex: 1;">
-                        <input type="email" placeholder="Email..." required style="flex: 1;">
+                    <div class="form-group">
+                        <input type="tel" name="tel" placeholder="Telefon" required>
+                        <input type="email" name="email" placeholder="Email" required>
                     </div>
-                    <textarea rows="4" class="mesaj" placeholder="Mesaj..." required></textarea>
-
+                    <div class="form-group">
+                        <textarea name="mesaj" placeholder="Mesajınız" required></textarea>
+                    </div>
                     <button type="submit" class="submit-btn">Göndər</button>
                 </form>
             </div>
+
+
         </div>
+
     </div>
 
     <!--------------------------- END CONTAINER ---------------------------->
@@ -92,7 +96,9 @@
     <footer>
         <div class="footer">
             <div class="footer-about">
-                <h2>Lala Mammadova</h2>
+                <div class="logo">
+                    <a href="index.html"><img src="images/mdvlogo.png" alt="logo"></a>
+                </div>
                 <p>Salam! Mən Lalə Məmmədova, gözəl və funksional veb proqramlar yaratmaq həvəsi olan qabaqcıl
                     tərtibatçıyam.</p>
                 <div class="sosial-footer">
@@ -102,43 +108,37 @@
                 </div>
             </div>
 
-            <div class="left">
+            <div class="footer-center">
                 <h2>Əlaqə</h2>
-                <ul>
-                    <div class="logo">
-                        <a href="index.html"><img src="images/mdvlogo.png" alt="logo"></a>
-                    </div>
-                    <li>
-                        <span><i class="fas fa-envelope"></i></span>
-                        <div class="info">
-                            <p>
-                                <a href="#">lalememmedova1133@gmail.com</a>
-                            </p>
-                        </div>
-                    </li>
-                    <li>
-                        <span><i class="fas fa-phone"></i></span>
-                        <div class="info">
-                            <p class="num">+994(51) 794-27-03</p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="centerFooter">
-                <h2>Keçidlər</h2>
+
                 <ul>
                     <li>
-                        <a href="about.html"><p class="text">Haqqımda</p></a>
+                        <i class="fas fa-envelope"></i>
+                        <a href="#">lalememmedova1133@gmail.com</a>
                     </li>
                     <li>
-                        <a href="blog.html"><p class="text">Blog</p></a>
-                    </li>
-                    <li>
-                        <a href="contact.html"><p class="text">Əlaqə</p></a>
+                        <i class="fas fa-phone"></i>
+                        <a href="#" class="num">+994(51) 794-27-03</a>
                     </li>
                 </ul>
             </div>
 
+            <div class="footer-right">
+                <h2>Keçidlər</h2>
+                <ul>
+                    <li>
+                        <a href="about.html">
+                            <p class="text">Haqqımda</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="blog.html">
+                            <p class="text">Blog</p>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
         </div>
         <div class="footer_down">
             <p>&copy; 2024 Lala Mammadova</p>

@@ -1,23 +1,12 @@
-.container-blog{
-    border:  1px solid rgb(149, 9, 161);
-    border-radius: 8px;
-    background-color:  rgb(245, 243, 243);
-    margin-top: 30px;
-    width: 988px;
-    margin-left: 185px;
-    margin-bottom: 50px;
-}
-
-.card-container {
+.container-blog {
+    width: 1200px;
     display: flex;
-    gap: 20px;
-    max-width: 1000px;
-    flex-wrap: wrap;
-    padding: 20px;
+    flex-direction: column;
+    margin-left: 90px;
 }
 
-.row {
-    margin-top: 40px;
+.row1 {
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 
@@ -26,7 +15,6 @@ h1 {
     font-size: 45px;
     margin-bottom: 10px;
     text-align: center;
-
 }
 
 .line {
@@ -38,50 +26,59 @@ h1 {
     padding: 0;
 }
 
-/* Kart Dizaynı */
-.card {
-    background-color: rgb(245, 243, 243);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    width: 300px;
-    transition: transform 0.3s;
-    border: 1px solid rgb(149, 9, 161);
+.blog-posts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    flex-wrap: wrap;
+    padding: 15px;
+    gap: 30px;
+    margin-bottom: 50px;
+
 }
 
+.blog {
+    background-color: rgb(245, 243, 243);
+    border: 1px solid rgb(149, 9, 161);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    overflow: hidden;
+    width: 350px;
+}
 
-/* Hover Effektləri */
-.card:hover {
+.blog:hover {
     transform: translateY(-5px);
 }
 
-/* Kartın içindəki şəkil */
-.card img {
-    border-bottom: 1px solid rgb(149, 9, 161);
+.blog img {
     width: 100%;
     height: 300px;
-    object-fit: cover;
+    border-bottom: 1px solid rgb(149, 9, 161);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
 
-/* Kartın içindəki məzmun */
-.card-content {
+.descriptions {
     padding: 15px;
     text-align: center;
 }
 
-/* Başlıq Dizaynı */
-.card-content h3 {
-    font-size: 1.5em;
-    color: #333;
+.descriptions h2 {
+    font-size: 40px;
+    color: #5c1b56;
     margin-bottom: 10px;
 }
 
-/* Qısa təsvir */
-.card-content p {
-    color: #555;
-    font-size: 0.95em;
-    line-height: 1.5;
-    max-height: 3em;
+.descriptions p {
+    margin-top: 15px;
+    font-size: 20px;
+    line-height: 1.8;
+    color: #a32d97;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    font-style: italic;
+    max-height: 5em;
     /* İki sətir üçün hündürlük */
     overflow: hidden;
     text-overflow: ellipsis;
@@ -90,21 +87,20 @@ h1 {
     -webkit-box-orient: vertical;
 }
 
-/* "Daha çox oxu" düyməsi */
-.read-more {
-    border: 1px solid rgb(149, 9, 161);
+.Btn{
     background-color: #5c1b56;
-    padding: 10px;
+    border: 1px solid rgb(149, 9, 161);
     border-radius: 8px;
-    display: inline-block;
-    margin-top: 15px;
     color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.4s ease, color 0.4s ease;
-}
+    font-size: 18px;
+    cursor: pointer;
+    padding: 6px;
+    margin-top: 10px;
+    transition: background-color 0.5s ease;
 
-.read-more:hover {
-    background-color: rgb(245, 243, 243);
+}
+.Btn:hover {
+    background-color: #fff;
     color: rgb(149, 9, 161);
+
 }
