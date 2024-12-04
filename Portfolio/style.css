@@ -58,9 +58,9 @@ body {
 }
 
 .section-title {
-    background: linear-gradient(to bottom, #0f0f0f, #413f3f 50%, #0f0f0f); 
+    background: linear-gradient(to bottom, #0f0f0f, #413f3f 50%, #0f0f0f);
     border-radius: 20px;
-    padding: 20px;
+    padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -68,6 +68,18 @@ body {
 
 .m-30px {
     margin: 30px;
+}
+
+.m-lr-30px {
+    margin: auto 30px;
+}
+
+.m-b-30px {
+    margin-bottom: 30px;
+}
+
+.float-end {
+    float: right;
 }
 
 .w-80 {
@@ -107,6 +119,14 @@ body {
 
 .col-md-6 {
     width: calc(100% / 2 - 10px);
+}
+
+.col-md-12 {
+    width: calc(100% / 1 - 10px);
+}
+
+.w-100 {
+    width: 100%;
 }
 
 .about-content {
@@ -322,7 +342,8 @@ button {
     padding: 10px 20px;
     font-size: 30px;
 }
-.fa-location-dot{
+
+.fa-location-dot {
     font-size: 39px;
 }
 
@@ -334,7 +355,8 @@ button {
     margin-bottom: 5px;
     font-size: 30px;
 }
-.info p{
+
+.info p {
     font-size: 20px;
 }
 
@@ -345,6 +367,7 @@ button {
 
 @media (max-width: 768px) {
     .navbar {
+        padding-top: 10px;
         flex-direction: column;
         align-items: start;
     }
@@ -360,6 +383,7 @@ button {
     }
 
     .menu li {
+        margin-left: 10px;
         display: block;
         padding: 5px 10px;
         font-size: 20px;
